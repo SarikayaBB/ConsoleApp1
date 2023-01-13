@@ -23,7 +23,7 @@ namespace SQLBaglanti.Controller
                 Customer customer = new Customer();
                 customer.Id = (int)dr["Id"];
                 customer.Guid = dr["Guid"].ToString();
-                customer.Name = dr["Name"].ToString();
+                customer.Name = (string)dr["Name"];
                 customer.Tel = dr["Tel"].ToString();
                 customer.IsDeleted = (bool)dr["isDeleted"];
                 list.Add(customer);
